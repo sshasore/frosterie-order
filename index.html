@@ -199,10 +199,47 @@ const PRODUCTS = [
     desc: "Imported frozen pastries",
     imgKey: "IMG_CROISSANT",
     variants: [
-      {id:"mini", label:"Mini 30g", carton:"3 bags", price: 168000, bag:"Bag of 80", price:47500, bag:"Bag of 40", price:24000, pack:"Pack of 25", price:15000, pack:"Pack of 20", price:12000},
-      {id:"midi", label:"Midi 60g", carton:"2 bags", price: 72000, bag:"Bag of 35", price:52000, pack:"Pack of 8", price:12000, pack:"Pack of 6", price:9000},
-      {id:"standard", label:"Standard 70g", carton:"2 bags", price: 80000, bag:"Bag of 30", price:53000, pack:"Pack of 6", price:10600},
-      {id:"classic", label:"Classic 80g", carton:"2 bags", price: 94000,bag:"Bag of 30", price:65000, pack:"Pack of 6", price:13000}
+  {
+    id: "mini",
+    label: "Mini 30g",
+    carton: "3 bags",
+    options: [
+      { type: "carton", label: "Carton", price: 168000 },
+      { type: "bag", label: "Bag of 80", price: 47500 },
+      { type: "bag", label: "Bag of 40", price: 24000 },
+      { type: "pack", label: "Pack of 25", price: 15000 },
+      { type: "pack", label: "Pack of 20", price: 12000 }
+    ]
+  },
+  {
+    id: "midi",
+    label: "Midi 60g",
+    carton: "2 bags",
+    options: [
+      { type: "carton", label: "Carton", price: 72000 },
+      { type: "bag", label: "Bag of 35", price: 52000 },
+      { type: "pack", label: "Pack of 8", price: 12000 },
+      { type: "pack", label: "Pack of 6", price: 9000 }
+    ]
+  },
+  {
+    id: "Maxi",
+    label: "Maxi 70g",
+    carton: "2 bags",
+    options: [
+      { type: "carton", label: "Carton", price: 80000 },
+      { type: "bag", label: "Bag of 30", price: 53000 },
+      { type: "pack", label: "Pack of 6", price: 10600 }
+    ]
+  },
+{
+    id: "Classic",
+    label: "Classic 80g",
+    carton: "2 bags",
+    options: [
+      { type: "carton", label: "Carton", price: 94000 },
+      { type: "bag", label: "Bag of 30", price: 65000 },
+      { type: "pack", label: "Pack of 6", price: 13000 }
     ]
   },
   {
